@@ -1,0 +1,26 @@
+[1.009s] Invoking command in '/home/stuart/lane_ws/src/lane_publisher': PYTHONPATH=/home/stuart/lane_ws/build/lane_publisher/prefix_override:/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lane_publisher build --build-base /home/stuart/lane_ws/build/lane_publisher/build install --record /home/stuart/lane_ws/build/lane_publisher/install.log --single-version-externally-managed
+[1.202s] running egg_info
+[1.203s] writing ../../build/lane_publisher/lane_publisher.egg-info/PKG-INFO
+[1.203s] writing dependency_links to ../../build/lane_publisher/lane_publisher.egg-info/dependency_links.txt
+[1.203s] writing entry points to ../../build/lane_publisher/lane_publisher.egg-info/entry_points.txt
+[1.204s] writing requirements to ../../build/lane_publisher/lane_publisher.egg-info/requires.txt
+[1.204s] writing top-level names to ../../build/lane_publisher/lane_publisher.egg-info/top_level.txt
+[1.205s] reading manifest file '../../build/lane_publisher/lane_publisher.egg-info/SOURCES.txt'
+[1.205s] writing manifest file '../../build/lane_publisher/lane_publisher.egg-info/SOURCES.txt'
+[1.206s] running build
+[1.206s] running build_py
+[1.206s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.206s]   warnings.warn(
+[1.206s] copying lane_publisher/publish.py -> /home/stuart/lane_ws/build/lane_publisher/build/lib/lane_publisher
+[1.206s] running install
+[1.206s] running install_lib
+[1.207s] copying /home/stuart/lane_ws/build/lane_publisher/build/lib/lane_publisher/publish.py -> /home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher
+[1.207s] byte-compiling /home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher/publish.py to publish.cpython-310.pyc
+[1.208s] running install_data
+[1.208s] running install_egg_info
+[1.210s] removing '/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[1.210s] Copying ../../build/lane_publisher/lane_publisher.egg-info to /home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher-0.0.0-py3.10.egg-info
+[1.211s] running install_scripts
+[1.230s] Installing lane_pub script to /home/stuart/lane_ws/install/lane_publisher/lib/lane_publisher
+[1.230s] writing list of installed files to '/home/stuart/lane_ws/build/lane_publisher/install.log'
+[1.251s] Invoked command in '/home/stuart/lane_ws/src/lane_publisher' returned '0': PYTHONPATH=/home/stuart/lane_ws/build/lane_publisher/prefix_override:/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lane_publisher build --build-base /home/stuart/lane_ws/build/lane_publisher/build install --record /home/stuart/lane_ws/build/lane_publisher/install.log --single-version-externally-managed

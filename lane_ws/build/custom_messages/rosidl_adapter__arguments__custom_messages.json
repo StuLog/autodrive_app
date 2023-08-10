@@ -1,0 +1,10 @@
+{
+  "package_name": "custom_messages",
+  "non_idl_tuples": [
+    "/home/stuart/lane_ws/src/custom_messages:msg/ParentMessage.msg",
+    "/home/stuart/lane_ws/src/custom_messages:msg/Laneid.msg",
+    "/home/stuart/lane_ws/src/custom_messages:msg/Lanetype.msg",
+    "/home/stuart/lane_ws/src/custom_messages:msg/Lanemarkings.msg",
+    "/home/stuart/lane_ws/src/custom_messages:msg/AllLanes.msg"
+  ]
+}

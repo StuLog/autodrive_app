@@ -1,0 +1,2 @@
+Invoking command in '/home/stuart/lane_ws/build/custom_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble /usr/bin/cmake --build /home/stuart/lane_ws/build/custom_messages -- -j16 -l16
+Invoked command in '/home/stuart/lane_ws/build/custom_messages' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble /usr/bin/cmake --build /home/stuart/lane_ws/build/custom_messages -- -j16 -l16

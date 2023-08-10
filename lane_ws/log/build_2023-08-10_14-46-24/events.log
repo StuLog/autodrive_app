@@ -1,0 +1,435 @@
+[0.000000] (-) TimerEvent: {}
+[0.000144] (custom_messages) JobQueued: {'identifier': 'custom_messages', 'dependencies': OrderedDict()}
+[0.000190] (lane_publisher) JobQueued: {'identifier': 'lane_publisher', 'dependencies': OrderedDict([('custom_messages', '/home/stuart/lane_ws/install/custom_messages')])}
+[0.000212] (custom_messages) JobStarted: {'identifier': 'custom_messages'}
+[0.008535] (custom_messages) JobProgress: {'identifier': 'custom_messages', 'progress': 'cmake'}
+[0.009099] (custom_messages) JobProgress: {'identifier': 'custom_messages', 'progress': 'build'}
+[0.010289] (custom_messages) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/stuart/lane_ws/build/custom_messages', '--', '-j16', '-l16'], 'cwd': '/home/stuart/lane_ws/build/custom_messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'stuart'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/stuart/lane_ws/install/custom_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}'), ('HOME', '/home/stuart'), ('OLDPWD', '/home/stuart/lane_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/stuart/lane_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'stuart'), ('NAME', 'DESKTOP-PB48TJT'), ('WSL_INTEROP', '/run/WSL/25295_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Python38/:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/x64/vc16/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/log4cxx/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/Graphviz/bin:/mnt/c/dev/ros2_humble:/mnt/c/Program Files/Polyspace/R2023a/polyspace/bin:/mnt/c/Users/Stuart/scoop/shims:/mnt/c/Users/Stuart/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Stuart/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Stuart/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2021.2.1/bin:/mnt/c/Users/Stuart/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/snap/bin'), ('WT_SESSION', '5604fae0-3001-4cdd-923b-cb16b0270a8d'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/stuart/lane_ws/install/custom_messages:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/stuart/lane_ws/build/custom_messages'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages:/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/stuart/lane_ws/install/custom_messages:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[0.032670] (custom_messages) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098656] (-) TimerEvent: {}
+[0.168155] (custom_messages) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.198813] (-) TimerEvent: {}
+[0.224617] (custom_messages) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.225987] (custom_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.228379] (custom_messages) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.298986] (-) TimerEvent: {}
+[0.399387] (-) TimerEvent: {}
+[0.499772] (-) TimerEvent: {}
+[0.600118] (-) TimerEvent: {}
+[0.700554] (-) TimerEvent: {}
+[0.800972] (-) TimerEvent: {}
+[0.901350] (-) TimerEvent: {}
+[0.913960] (custom_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001498] (-) TimerEvent: {}
+[1.101837] (-) TimerEvent: {}
+[1.119185] (custom_messages) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.202002] (-) TimerEvent: {}
+[1.281264] (custom_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.302148] (-) TimerEvent: {}
+[1.402513] (-) TimerEvent: {}
+[1.496487] (custom_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.502647] (-) TimerEvent: {}
+[1.517460] (custom_messages) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.537458] (custom_messages) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.537610] (custom_messages) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.537677] (custom_messages) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.549827] (custom_messages) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.550626] (custom_messages) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.553307] (custom_messages) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.578972] (custom_messages) StdoutLine: {'line': b'-- Generating done\n'}
+[1.581059] (custom_messages) StdoutLine: {'line': b'-- Build files have been written to: /home/stuart/lane_ws/build/custom_messages\n'}
+[1.597566] (custom_messages) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.602824] (-) TimerEvent: {}
+[1.603846] (custom_messages) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.609901] (custom_messages) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_custom_messages\n'}
+[1.702980] (-) TimerEvent: {}
+[1.776607] (custom_messages) StdoutLine: {'line': b'running egg_info\n'}
+[1.777132] (custom_messages) StdoutLine: {'line': b'writing custom_messages.egg-info/PKG-INFO\n'}
+[1.777375] (custom_messages) StdoutLine: {'line': b'writing dependency_links to custom_messages.egg-info/dependency_links.txt\n'}
+[1.777514] (custom_messages) StdoutLine: {'line': b'writing top-level names to custom_messages.egg-info/top_level.txt\n'}
+[1.779175] (custom_messages) StdoutLine: {'line': b"reading manifest file 'custom_messages.egg-info/SOURCES.txt'\n"}
+[1.779612] (custom_messages) StdoutLine: {'line': b"writing manifest file 'custom_messages.egg-info/SOURCES.txt'\n"}
+[1.797723] (custom_messages) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_custom_messages_egg\n'}
+[1.803137] (-) TimerEvent: {}
+[1.899800] (custom_messages) StdoutLine: {'line': b'[  3%] Built target custom_messages__cpp\n'}
+[1.903271] (-) TimerEvent: {}
+[1.908392] (custom_messages) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.908952] (custom_messages) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.909932] (custom_messages) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.921977] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_generator_c\x1b[0m\n'}
+[1.930834] (custom_messages) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/msg/detail/laneid__functions.c.o\x1b[0m\n'}
+[1.930987] (custom_messages) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/msg/detail/lanetype__functions.c.o\x1b[0m\n'}
+[1.931050] (custom_messages) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/msg/detail/parent_message__functions.c.o\x1b[0m\n'}
+[1.931104] (custom_messages) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/msg/detail/lanemarkings__functions.c.o\x1b[0m\n'}
+[1.967732] (custom_messages) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libcustom_messages__rosidl_generator_c.so\x1b[0m\n'}
+[2.003433] (-) TimerEvent: {}
+[2.103752] (-) TimerEvent: {}
+[2.204038] (-) TimerEvent: {}
+[2.220596] (custom_messages) StdoutLine: {'line': b'[ 18%] Built target custom_messages__rosidl_generator_c\n'}
+[2.221210] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.227673] (custom_messages) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.228136] (custom_messages) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.228303] (custom_messages) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.231657] (custom_messages) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages/msg/detail/dds_fastrtps/parent_message__type_support.cpp.o\x1b[0m\n'}
+[2.231986] (custom_messages) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages/msg/detail/dds_fastrtps/laneid__type_support.cpp.o\x1b[0m\n'}
+[2.232287] (custom_messages) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages/msg/detail/dds_fastrtps/lanetype__type_support.cpp.o\x1b[0m\n'}
+[2.232715] (custom_messages) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages/msg/detail/dds_fastrtps/lanemarkings__type_support.cpp.o\x1b[0m\n'}
+[2.255121] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.267907] (custom_messages) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages/msg/lanemarkings__type_support.cpp.o\x1b[0m\n'}
+[2.268262] (custom_messages) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages/msg/parent_message__type_support.cpp.o\x1b[0m\n'}
+[2.269385] (custom_messages) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages/msg/lanetype__type_support.cpp.o\x1b[0m\n'}
+[2.269541] (custom_messages) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages/msg/laneid__type_support.cpp.o\x1b[0m\n'}
+[2.304177] (-) TimerEvent: {}
+[2.305269] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.317397] (custom_messages) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages/msg/detail/parent_message__type_support.cpp.o\x1b[0m\n'}
+[2.317674] (custom_messages) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages/msg/detail/laneid__type_support.cpp.o\x1b[0m\n'}
+[2.317815] (custom_messages) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages/msg/detail/lanetype__type_support.cpp.o\x1b[0m\n'}
+[2.317948] (custom_messages) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages/msg/detail/lanemarkings__type_support.cpp.o\x1b[0m\n'}
+[2.404329] (-) TimerEvent: {}
+[2.504770] (-) TimerEvent: {}
+[2.605126] (-) TimerEvent: {}
+[2.642342] (custom_messages) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.669774] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_c\x1b[0m\n'}
+[2.680723] (custom_messages) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/msg/parent_message__type_support.cpp.o\x1b[0m\n'}
+[2.682032] (custom_messages) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/msg/lanemarkings__type_support.cpp.o\x1b[0m\n'}
+[2.682277] (custom_messages) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/msg/lanetype__type_support.cpp.o\x1b[0m\n'}
+[2.682420] (custom_messages) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/msg/laneid__type_support.cpp.o\x1b[0m\n'}
+[2.705313] (-) TimerEvent: {}
+[2.713108] (custom_messages) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.773330] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.782145] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.783352] (custom_messages) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages/msg/detail/lanemarkings__type_support.c.o\x1b[0m\n'}
+[2.783757] (custom_messages) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages/msg/detail/laneid__type_support.c.o\x1b[0m\n'}
+[2.784492] (custom_messages) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages/msg/detail/parent_message__type_support.c.o\x1b[0m\n'}
+[2.784795] (custom_messages) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages/msg/detail/lanetype__type_support.c.o\x1b[0m\n'}
+[2.795251] (custom_messages) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages/msg/detail/lanetype__type_support_c.cpp.o\x1b[0m\n'}
+[2.795512] (custom_messages) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages/msg/detail/lanemarkings__type_support_c.cpp.o\x1b[0m\n'}
+[2.795636] (custom_messages) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages/msg/detail/parent_message__type_support_c.cpp.o\x1b[0m\n'}
+[2.795745] (custom_messages) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.798417] (custom_messages) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages/msg/detail/laneid__type_support_c.cpp.o\x1b[0m\n'}
+[2.805452] (-) TimerEvent: {}
+[2.820726] (custom_messages) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking C shared library libcustom_messages__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.856215] (custom_messages) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.905697] (-) TimerEvent: {}
+[2.928889] (custom_messages) StdoutLine: {'line': b'[ 76%] Built target custom_messages__rosidl_typesupport_cpp\n'}
+[3.005829] (-) TimerEvent: {}
+[3.031532] (custom_messages) StdoutLine: {'line': b'[ 76%] Built target custom_messages__rosidl_typesupport_c\n'}
+[3.106056] (custom_messages) StdoutLine: {'line': b'[ 76%] Built target custom_messages__rosidl_typesupport_fastrtps_cpp\n'}
+[3.106380] (-) TimerEvent: {}
+[3.125181] (custom_messages) StdoutLine: {'line': b'[ 76%] Built target custom_messages__rosidl_typesupport_introspection_c\n'}
+[3.162520] (custom_messages) StdoutLine: {'line': b'[ 76%] Built target custom_messages__rosidl_typesupport_introspection_cpp\n'}
+[3.192568] (custom_messages) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.206520] (-) TimerEvent: {}
+[3.306900] (-) TimerEvent: {}
+[3.407362] (-) TimerEvent: {}
+[3.507757] (-) TimerEvent: {}
+[3.525079] (custom_messages) StdoutLine: {'line': b'[ 78%] Built target custom_messages__rosidl_typesupport_fastrtps_c\n'}
+[3.541654] (custom_messages) StdoutLine: {'line': b'[ 78%] Built target custom_messages\n'}
+[3.558371] (custom_messages) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.607920] (-) TimerEvent: {}
+[3.708262] (-) TimerEvent: {}
+[3.808600] (-) TimerEvent: {}
+[3.908901] (-) TimerEvent: {}
+[4.009217] (-) TimerEvent: {}
+[4.038128] (custom_messages) StdoutLine: {'line': b'[ 80%] Built target custom_messages__py\n'}
+[4.045548] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_generator_py\x1b[0m\n'}
+[4.055363] (custom_messages) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/msg/_laneid_s.c.o\x1b[0m\n'}
+[4.055576] (custom_messages) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/msg/_parent_message_s.c.o\x1b[0m\n'}
+[4.055842] (custom_messages) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/msg/_lanetype_s.c.o\x1b[0m\n'}
+[4.055956] (custom_messages) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/msg/_lanemarkings_s.c.o\x1b[0m\n'}
+[4.109404] (-) TimerEvent: {}
+[4.128881] (custom_messages) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_messages/libcustom_messages__rosidl_generator_py.so\x1b[0m\n'}
+[4.209577] (-) TimerEvent: {}
+[4.309990] (-) TimerEvent: {}
+[4.410325] (-) TimerEvent: {}
+[4.444772] (custom_messages) StdoutLine: {'line': b'[ 89%] Built target custom_messages__rosidl_generator_py\n'}
+[4.452837] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.452996] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.453062] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.462139] (custom_messages) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.462311] (custom_messages) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.462375] (custom_messages) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.510500] (-) TimerEvent: {}
+[4.531309] (custom_messages) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_messages/custom_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.532222] (custom_messages) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_messages/custom_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.532521] (custom_messages) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_messages/custom_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.610627] (-) TimerEvent: {}
+[4.710938] (-) TimerEvent: {}
+[4.731434] (custom_messages) StdoutLine: {'line': b'[100%] Built target custom_messages__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.731596] (custom_messages) StdoutLine: {'line': b'[100%] Built target custom_messages__rosidl_typesupport_c__pyext\n'}
+[4.731666] (custom_messages) StdoutLine: {'line': b'[100%] Built target custom_messages__rosidl_typesupport_introspection_c__pyext\n'}
+[4.741297] (custom_messages) CommandEnded: {'returncode': 0}
+[4.811104] (-) TimerEvent: {}
+[4.828347] (custom_messages) JobProgress: {'identifier': 'custom_messages', 'progress': 'install'}
+[4.836563] (custom_messages) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/stuart/lane_ws/build/custom_messages'], 'cwd': '/home/stuart/lane_ws/build/custom_messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'stuart'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/stuart/lane_ws/install/custom_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}'), ('HOME', '/home/stuart'), ('OLDPWD', '/home/stuart/lane_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/stuart/lane_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'stuart'), ('NAME', 'DESKTOP-PB48TJT'), ('WSL_INTEROP', '/run/WSL/25295_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Python38/:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/x64/vc16/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/log4cxx/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/Graphviz/bin:/mnt/c/dev/ros2_humble:/mnt/c/Program Files/Polyspace/R2023a/polyspace/bin:/mnt/c/Users/Stuart/scoop/shims:/mnt/c/Users/Stuart/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Stuart/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Stuart/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2021.2.1/bin:/mnt/c/Users/Stuart/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/snap/bin'), ('WT_SESSION', '5604fae0-3001-4cdd-923b-cb16b0270a8d'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/stuart/lane_ws/install/custom_messages:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/stuart/lane_ws/build/custom_messages'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages:/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/stuart/lane_ws/install/custom_messages:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[4.842713] (custom_messages) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.843090] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/ament_index/resource_index/rosidl_interfaces/custom_messages\n'}
+[4.843329] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages\n'}
+[4.843448] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg\n'}
+[4.843701] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/lanemarkings.h\n'}
+[4.843793] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/lanetype.h\n'}
+[4.843894] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/parent_message.h\n'}
+[4.844012] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail\n'}
+[4.844277] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__type_support.h\n'}
+[4.844395] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__functions.c\n'}
+[4.844520] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__functions.h\n'}
+[4.844710] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__functions.h\n'}
+[4.844882] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__functions.c\n'}
+[4.845155] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__type_support.h\n'}
+[4.845344] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__functions.h\n'}
+[4.845512] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__type_support.h\n'}
+[4.845808] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__struct.h\n'}
+[4.845885] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__functions.c\n'}
+[4.845945] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__struct.h\n'}
+[4.846112] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__functions.h\n'}
+[4.846286] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__functions.h\n'}
+[4.846533] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__struct.h\n'}
+[4.846717] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__functions.c\n'}
+[4.846978] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__type_support.h\n'}
+[4.847045] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__functions.c\n'}
+[4.847129] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__functions.h\n'}
+[4.847301] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__type_support.h\n'}
+[4.847455] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__functions.c\n'}
+[4.847607] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__type_support.h\n'}
+[4.847770] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__struct.h\n'}
+[4.847905] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__struct.h\n'}
+[4.848169] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__struct.h\n'}
+[4.848335] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.848491] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/child2.h\n'}
+[4.848655] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/laneid.h\n'}
+[4.848746] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/child1.h\n'}
+[4.848900] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/environment/library_path.sh\n'}
+[4.849150] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/environment/library_path.dsv\n'}
+[4.849341] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_generator_c.so\n'}
+[4.849507] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_generator_c.so" to ""\n'}
+[4.849695] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages\n'}
+[4.849861] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg\n'}
+[4.850024] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.850343] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail\n'}
+[4.850510] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__rosidl_typesupport_fastrtps_c.h\n'}
+[4.850666] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__rosidl_typesupport_fastrtps_c.h\n'}
+[4.850822] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__rosidl_typesupport_fastrtps_c.h\n'}
+[4.850974] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__rosidl_typesupport_fastrtps_c.h\n'}
+[4.851126] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__rosidl_typesupport_fastrtps_c.h\n'}
+[4.851291] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__rosidl_typesupport_fastrtps_c.h\n'}
+[4.851538] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_fastrtps_c.so\n'}
+[4.851702] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.851854] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages\n'}
+[4.852004] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg\n'}
+[4.852155] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail\n'}
+[4.852317] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__type_support.c\n'}
+[4.852463] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__type_support.c\n'}
+[4.852786] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__rosidl_typesupport_introspection_c.h\n'}
+[4.852943] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__rosidl_typesupport_introspection_c.h\n'}
+[4.853095] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__type_support.c\n'}
+[4.853263] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__rosidl_typesupport_introspection_c.h\n'}
+[4.853415] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__rosidl_typesupport_introspection_c.h\n'}
+[4.853567] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__type_support.c\n'}
+[4.853733] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__type_support.c\n'}
+[4.853845] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__type_support.c\n'}
+[4.853996] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__rosidl_typesupport_introspection_c.h\n'}
+[4.854261] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__rosidl_typesupport_introspection_c.h\n'}
+[4.854386] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.854487] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_introspection_c.so\n'}
+[4.854676] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.854747] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_c.so\n'}
+[4.854859] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_c.so" to ""\n'}
+[4.855000] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages\n'}
+[4.855163] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg\n'}
+[4.855444] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/child2.hpp\n'}
+[4.855661] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/child1.hpp\n'}
+[4.855859] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/laneid.hpp\n'}
+[4.856034] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail\n'}
+[4.856296] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__struct.hpp\n'}
+[4.856467] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__traits.hpp\n'}
+[4.856639] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__struct.hpp\n'}
+[4.856809] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__struct.hpp\n'}
+[4.856971] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__builder.hpp\n'}
+[4.857172] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__struct.hpp\n'}
+[4.857257] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__traits.hpp\n'}
+[4.857314] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__struct.hpp\n'}
+[4.857370] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__traits.hpp\n'}
+[4.857423] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__builder.hpp\n'}
+[4.857475] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__builder.hpp\n'}
+[4.857527] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__builder.hpp\n'}
+[4.857579] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__builder.hpp\n'}
+[4.857631] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__struct.hpp\n'}
+[4.857743] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__traits.hpp\n'}
+[4.857801] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__builder.hpp\n'}
+[4.857891] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__traits.hpp\n'}
+[4.857947] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__traits.hpp\n'}
+[4.858000] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/lanemarkings.hpp\n'}
+[4.858052] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/lanetype.hpp\n'}
+[4.858140] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/parent_message.hpp\n'}
+[4.858197] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages\n'}
+[4.858250] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg\n'}
+[4.858306] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.858377] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail\n'}
+[4.858430] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.858483] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.858535] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.858589] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.858641] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/dds_fastrtps\n'}
+[4.858694] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.858749] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.858816] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.858886] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.858941] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages\n'}
+[4.858994] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg\n'}
+[4.859046] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail\n'}
+[4.859099] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.859152] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.859205] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__type_support.cpp\n'}
+[4.859277] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/parent_message__type_support.cpp\n'}
+[4.859331] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.859385] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__type_support.cpp\n'}
+[4.859438] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/laneid__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.859498] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.859552] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanetype__type_support.cpp\n'}
+[4.859606] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child1__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.859661] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/lanemarkings__type_support.cpp\n'}
+[4.859716] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/include/custom_messages/custom_messages/msg/detail/child2__type_support.cpp\n'}
+[4.859769] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_introspection_cpp.so\n'}
+[4.859859] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.859922] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_cpp.so\n'}
+[4.860108] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_cpp.so" to ""\n'}
+[4.862097] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/environment/pythonpath.sh\n'}
+[4.862163] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/environment/pythonpath.dsv\n'}
+[4.862239] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info\n'}
+[4.862297] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.862354] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.862411] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.862473] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.862531] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages\n'}
+[4.862601] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.862680] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.862741] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c\n'}
+[4.862805] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.862864] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/_custom_messages_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.862922] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/libcustom_messages__rosidl_generator_py.so\n'}
+[4.862979] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/__init__.py\n'}
+[4.863035] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.863093] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg\n'}
+[4.863149] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_lanetype.py\n'}
+[4.863222] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_child1_s.c\n'}
+[4.863277] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_laneid.py\n'}
+[4.863332] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_parent_message_s.c\n'}
+[4.863387] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_child2.py\n'}
+[4.863442] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_child2_s.c\n'}
+[4.863497] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_lanemarkings.py\n'}
+[4.863552] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_child1.py\n'}
+[4.863635] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_lanemarkings_s.c\n'}
+[4.863709] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/__init__.py\n'}
+[4.863767] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_laneid_s.c\n'}
+[4.863824] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_lanetype_s.c\n'}
+[4.863880] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_parent_message.py\n'}
+[4.888089] (custom_messages) StdoutLine: {'line': b"Listing '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages'...\n"}
+[4.888263] (custom_messages) StdoutLine: {'line': b"Compiling '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/__init__.py'...\n"}
+[4.888336] (custom_messages) StdoutLine: {'line': b"Listing '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg'...\n"}
+[4.888409] (custom_messages) StdoutLine: {'line': b"Compiling '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/__init__.py'...\n"}
+[4.888469] (custom_messages) StdoutLine: {'line': b"Compiling '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_laneid.py'...\n"}
+[4.888544] (custom_messages) StdoutLine: {'line': b"Compiling '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_lanemarkings.py'...\n"}
+[4.888642] (custom_messages) StdoutLine: {'line': b"Compiling '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_lanetype.py'...\n"}
+[4.888702] (custom_messages) StdoutLine: {'line': b"Compiling '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/msg/_parent_message.py'...\n"}
+[4.892332] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.892534] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.892717] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.892937] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.893084] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.893364] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.893628] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_generator_py.so\n'}
+[4.893717] (custom_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/stuart/lane_ws/install/custom_messages/lib/libcustom_messages__rosidl_generator_py.so" to ""\n'}
+[4.894007] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/msg/ParentMessage.idl\n'}
+[4.894237] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/msg/Laneid.idl\n'}
+[4.894407] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/msg/Lanetype.idl\n'}
+[4.894569] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/msg/Lanemarkings.idl\n'}
+[4.894720] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/msg/ParentMessage.msg\n'}
+[4.894995] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/msg/Laneid.msg\n'}
+[4.895087] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/msg/Lanetype.msg\n'}
+[4.895263] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/msg/Lanemarkings.msg\n'}
+[4.895545] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/ament_index/resource_index/package_run_dependencies/custom_messages\n'}
+[4.895755] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/ament_index/resource_index/parent_prefix_path/custom_messages\n'}
+[4.895921] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/environment/ament_prefix_path.sh\n'}
+[4.896234] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/environment/ament_prefix_path.dsv\n'}
+[4.896414] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/environment/path.sh\n'}
+[4.896573] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/environment/path.dsv\n'}
+[4.896742] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/local_setup.bash\n'}
+[4.896897] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/local_setup.sh\n'}
+[4.897052] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/local_setup.zsh\n'}
+[4.897311] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/local_setup.dsv\n'}
+[4.897693] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/package.dsv\n'}
+[4.897766] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/ament_index/resource_index/packages/custom_messages\n'}
+[4.897826] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_cExport.cmake\n'}
+[4.897884] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.897939] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.897994] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.898050] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.898104] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.898159] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_cExport.cmake\n'}
+[4.898228] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.898281] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_cppExport.cmake\n'}
+[4.898333] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.898419] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.898474] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.898527] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.898596] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_cppExport.cmake\n'}
+[4.898702] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.898836] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_pyExport.cmake\n'}
+[4.898949] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.899060] (custom_messages) StdoutLine: {'line': b'-- Installing: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/rosidl_cmake-extras.cmake\n'}
+[4.899155] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.899376] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.899721] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.900516] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.900667] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.900760] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.900877] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messagesConfig.cmake\n'}
+[4.901018] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/cmake/custom_messagesConfig-version.cmake\n'}
+[4.901127] (custom_messages) StdoutLine: {'line': b'-- Up-to-date: /home/stuart/lane_ws/install/custom_messages/share/custom_messages/package.xml\n'}
+[4.901614] (custom_messages) CommandEnded: {'returncode': 0}
+[4.911452] (-) TimerEvent: {}
+[5.012369] (-) TimerEvent: {}
+[5.016267] (custom_messages) JobEnded: {'identifier': 'custom_messages', 'rc': 0}
+[5.016672] (lane_publisher) JobStarted: {'identifier': 'lane_publisher'}
+[5.112510] (-) TimerEvent: {}
+[5.212906] (-) TimerEvent: {}
+[5.313328] (-) TimerEvent: {}
+[5.413723] (-) TimerEvent: {}
+[5.514062] (-) TimerEvent: {}
+[5.614412] (-) TimerEvent: {}
+[5.714813] (-) TimerEvent: {}
+[5.815863] (-) TimerEvent: {}
+[5.916278] (-) TimerEvent: {}
+[6.016564] (-) TimerEvent: {}
+[6.073987] (lane_publisher) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/lane_publisher', 'build', '--build-base', '/home/stuart/lane_ws/build/lane_publisher/build', 'install', '--record', '/home/stuart/lane_ws/build/lane_publisher/install.log', '--single-version-externally-managed'], 'cwd': '/home/stuart/lane_ws/src/lane_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'stuart', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/stuart/lane_ws/install/custom_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}', 'HOME': '/home/stuart', 'OLDPWD': '/home/stuart/lane_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/stuart/lane_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'stuart', 'NAME': 'DESKTOP-PB48TJT', 'WSL_INTEROP': '/run/WSL/25295_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Python38/:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/x64/vc16/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/log4cxx/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/Graphviz/bin:/mnt/c/dev/ros2_humble:/mnt/c/Program Files/Polyspace/R2023a/polyspace/bin:/mnt/c/Users/Stuart/scoop/shims:/mnt/c/Users/Stuart/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Stuart/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Stuart/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2021.2.1/bin:/mnt/c/Users/Stuart/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/snap/bin', 'WT_SESSION': '5604fae0-3001-4cdd-923b-cb16b0270a8d', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/stuart/lane_ws/install/custom_messages:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/stuart/lane_ws/build/lane_publisher', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/stuart/lane_ws/build/lane_publisher/prefix_override:/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages:/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages:/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/stuart/lane_ws/install/custom_messages', 'WSLENV': 'WT_SESSION::WT_PROFILE_ID'}, 'shell': False}
+[6.116742] (-) TimerEvent: {}
+[6.217065] (-) TimerEvent: {}
+[6.274795] (lane_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[6.275394] (lane_publisher) StdoutLine: {'line': b'writing ../../build/lane_publisher/lane_publisher.egg-info/PKG-INFO\n'}
+[6.275636] (lane_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/lane_publisher/lane_publisher.egg-info/dependency_links.txt\n'}
+[6.275862] (lane_publisher) StdoutLine: {'line': b'writing entry points to ../../build/lane_publisher/lane_publisher.egg-info/entry_points.txt\n'}
+[6.276028] (lane_publisher) StdoutLine: {'line': b'writing requirements to ../../build/lane_publisher/lane_publisher.egg-info/requires.txt\n'}
+[6.276186] (lane_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/lane_publisher/lane_publisher.egg-info/top_level.txt\n'}
+[6.277341] (lane_publisher) StdoutLine: {'line': b"reading manifest file '../../build/lane_publisher/lane_publisher.egg-info/SOURCES.txt'\n"}
+[6.278005] (lane_publisher) StdoutLine: {'line': b"writing manifest file '../../build/lane_publisher/lane_publisher.egg-info/SOURCES.txt'\n"}
+[6.278183] (lane_publisher) StdoutLine: {'line': b'running build\n'}
+[6.278419] (lane_publisher) StdoutLine: {'line': b'running build_py\n'}
+[6.278511] (lane_publisher) StdoutLine: {'line': b'copying lane_publisher/publish.py -> /home/stuart/lane_ws/build/lane_publisher/build/lib/lane_publisher\n'}
+[6.278656] (lane_publisher) StdoutLine: {'line': b'running install\n'}
+[6.278942] (lane_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[6.279035] (lane_publisher) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.279108] (lane_publisher) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.279567] (lane_publisher) StdoutLine: {'line': b'copying /home/stuart/lane_ws/build/lane_publisher/build/lib/lane_publisher/publish.py -> /home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher\n'}
+[6.280065] (lane_publisher) StdoutLine: {'line': b'byte-compiling /home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher/publish.py to publish.cpython-310.pyc\n'}
+[6.280450] (lane_publisher) StdoutLine: {'line': b'running install_data\n'}
+[6.280644] (lane_publisher) StderrLine: {'line': b'Sorry: TabError: inconsistent use of tabs and spaces in indentation (publish.py, line 18)\n'}
+[6.280712] (lane_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.281876] (lane_publisher) StdoutLine: {'line': b"removing '/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.282049] (lane_publisher) StdoutLine: {'line': b'Copying ../../build/lane_publisher/lane_publisher.egg-info to /home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher-0.0.0-py3.10.egg-info\n'}
+[6.282769] (lane_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[6.298021] (lane_publisher) StdoutLine: {'line': b'Installing lane_pub script to /home/stuart/lane_ws/install/lane_publisher/lib/lane_publisher\n'}
+[6.298309] (lane_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/stuart/lane_ws/build/lane_publisher/install.log'\n"}
+[6.315755] (lane_publisher) CommandEnded: {'returncode': 0}
+[6.318549] (-) TimerEvent: {}
+[6.322791] (lane_publisher) JobEnded: {'identifier': 'lane_publisher', 'rc': 0}
+[6.323714] (-) EventReactorShutdown: {}

@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages/lane_publisher/publish.py", line 16
+    self.get_logger().info(i))
+                             ^
+SyntaxError: unmatched ')'
+

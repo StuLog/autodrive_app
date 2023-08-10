@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_messages/msg/Child2.msg
+// generated code does not contain a copyright notice
+
+
+module custom_messages {
+  module msg {
+    @verbatim (language="comment", text=
+      "File: Child2.msg")
+    struct Child2 {
+      string child2_name;
+    };
+  };
+};

@@ -1,0 +1,3 @@
+[console_scripts]
+lane_pub = lane_publisher.publish:main
+

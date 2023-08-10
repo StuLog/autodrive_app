@@ -1,0 +1,97 @@
+[0.000000] (-) TimerEvent: {}
+[0.000389] (custom_messages) JobQueued: {'identifier': 'custom_messages', 'dependencies': OrderedDict()}
+[0.000440] (lane_publisher) JobQueued: {'identifier': 'lane_publisher', 'dependencies': OrderedDict([('custom_messages', '/home/stuart/lane_ws/install/custom_messages')])}
+[0.001375] (custom_messages) JobStarted: {'identifier': 'custom_messages'}
+[0.011138] (custom_messages) JobProgress: {'identifier': 'custom_messages', 'progress': 'cmake'}
+[0.011627] (custom_messages) JobProgress: {'identifier': 'custom_messages', 'progress': 'build'}
+[0.012478] (custom_messages) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/stuart/lane_ws/build/custom_messages', '--', '-j16', '-l16'], 'cwd': '/home/stuart/lane_ws/build/custom_messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'stuart'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/stuart/lane_ws/install/custom_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}'), ('HOME', '/home/stuart'), ('OLDPWD', '/home/stuart/lane_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/stuart/lane_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'stuart'), ('NAME', 'DESKTOP-PB48TJT'), ('WSL_INTEROP', '/run/WSL/25295_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Python38/:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/x64/vc16/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/log4cxx/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/Graphviz/bin:/mnt/c/dev/ros2_humble:/mnt/c/Program Files/Polyspace/R2023a/polyspace/bin:/mnt/c/Users/Stuart/scoop/shims:/mnt/c/Users/Stuart/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Stuart/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Stuart/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2021.2.1/bin:/mnt/c/Users/Stuart/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/snap/bin'), ('WT_SESSION', '5604fae0-3001-4cdd-923b-cb16b0270a8d'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/stuart/lane_ws/install/custom_messages:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/stuart/lane_ws/build/custom_messages'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/stuart/lane_ws/install/custom_messages/local/lib/python3.10/dist-packages:/home/stuart/lane_ws/install/lane_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/stuart/lane_ws/install/custom_messages:/home/stuart/lane_ws/install/lane_publisher:/opt/ros/humble'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[0.034967] (custom_messages) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100067] (-) TimerEvent: {}
+[0.166193] (custom_messages) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.200186] (-) TimerEvent: {}
+[0.225803] (custom_messages) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.227589] (custom_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.230416] (custom_messages) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.300362] (-) TimerEvent: {}
+[0.400781] (-) TimerEvent: {}
+[0.501135] (-) TimerEvent: {}
+[0.601551] (-) TimerEvent: {}
+[0.701930] (-) TimerEvent: {}
+[0.802271] (-) TimerEvent: {}
+[0.902637] (-) TimerEvent: {}
+[0.923315] (custom_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.002788] (-) TimerEvent: {}
+[1.103146] (-) TimerEvent: {}
+[1.123893] (custom_messages) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.203314] (-) TimerEvent: {}
+[1.293414] (custom_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.303494] (-) TimerEvent: {}
+[1.403812] (-) TimerEvent: {}
+[1.504170] (-) TimerEvent: {}
+[1.510156] (custom_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.532083] (custom_messages) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.553627] (custom_messages) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.553797] (custom_messages) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.553868] (custom_messages) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.567606] (custom_messages) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.568437] (custom_messages) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.571343] (custom_messages) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.598412] (custom_messages) StdoutLine: {'line': b'-- Generating done\n'}
+[1.600633] (custom_messages) StdoutLine: {'line': b'-- Build files have been written to: /home/stuart/lane_ws/build/custom_messages\n'}
+[1.604255] (-) TimerEvent: {}
+[1.620189] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_generator_c\x1b[0m\n'}
+[1.627362] (custom_messages) StdoutLine: {'line': b'[  1%] Built target custom_messages__cpp\n'}
+[1.628993] (custom_messages) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/msg/detail/parent_message__functions.c.o\x1b[0m\n'}
+[1.634465] (custom_messages) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_custom_messages\n'}
+[1.635140] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.635469] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.635564] (custom_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.638886] (custom_messages) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_generator_c/custom_messages/msg/detail/parent_message__functions.h:19\x1b[m\x1b[K,\n'}
+[1.639125] (custom_messages) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_generator_c/custom_messages/msg/detail/parent_message__functions.c:4\x1b[m\x1b[K:\n'}
+[1.639185] (custom_messages) StderrLine: {'line': b'\x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_generator_c/custom_messages/msg/detail/parent_message__struct.h:26:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcustom_message/msg/detail/lanemarkings__struct.h: No such file or directory\n'}
+[1.639235] (custom_messages) StderrLine: {'line': b'   26 | #include \x1b[01;31m\x1b[K"custom_message/msg/detail/lanemarkings__struct.h"\x1b[m\x1b[K\n'}
+[1.639298] (custom_messages) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.639366] (custom_messages) StderrLine: {'line': b'compilation terminated.\n'}
+[1.639701] (custom_messages) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_messages__rosidl_generator_c.dir/build.make:153: CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/msg/detail/parent_message__functions.c.o] Error 1\n'}
+[1.639998] (custom_messages) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/custom_messages__rosidl_generator_c.dir/all] Error 2\n'}
+[1.640122] (custom_messages) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.645350] (custom_messages) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages/msg/parent_message__type_support.cpp.o\x1b[0m\n'}
+[1.645826] (custom_messages) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages/msg/detail/dds_fastrtps/parent_message__type_support.cpp.o\x1b[0m\n'}
+[1.645929] (custom_messages) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages/msg/detail/parent_message__type_support.cpp.o\x1b[0m\n'}
+[1.679363] (custom_messages) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_typesupport_cpp/custom_messages/msg/parent_message__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[1.679504] (custom_messages) StderrLine: {'line': b'\x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_generator_cpp/custom_messages/msg/detail/parent_message__struct.hpp:24:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcustom_message/msg/detail/lanemarkings__struct.hpp: No such file or directory\n'}
+[1.679571] (custom_messages) StderrLine: {'line': b'   24 | #include \x1b[01;31m\x1b[K"custom_message/msg/detail/lanemarkings__struct.hpp"\x1b[m\x1b[K\n'}
+[1.679621] (custom_messages) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.679668] (custom_messages) StderrLine: {'line': b'compilation terminated.\n'}
+[1.680613] (custom_messages) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_typesupport_fastrtps_cpp/custom_messages/msg/detail/parent_message__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[1.680822] (custom_messages) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_typesupport_fastrtps_cpp/custom_messages/msg/detail/dds_fastrtps/parent_message__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[1.680908] (custom_messages) StderrLine: {'line': b'\x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_generator_cpp/custom_messages/msg/detail/parent_message__struct.hpp:24:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcustom_message/msg/detail/lanemarkings__struct.hpp: No such file or directory\n'}
+[1.680987] (custom_messages) StderrLine: {'line': b'   24 | #include \x1b[01;31m\x1b[K"custom_message/msg/detail/lanemarkings__struct.hpp"\x1b[m\x1b[K\n'}
+[1.681061] (custom_messages) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.681133] (custom_messages) StderrLine: {'line': b'compilation terminated.\n'}
+[1.681206] (custom_messages) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/build.make:98: CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages/msg/parent_message__type_support.cpp.o] Error 1\n'}
+[1.681540] (custom_messages) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[1.681872] (custom_messages) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/build.make:112: CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages/msg/detail/dds_fastrtps/parent_message__type_support.cpp.o] Error 1\n'}
+[1.682050] (custom_messages) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[1.684704] (custom_messages) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_typesupport_introspection_cpp/custom_messages/msg/detail/parent_message__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[1.684795] (custom_messages) StderrLine: {'line': b'\x1b[01m\x1b[K/home/stuart/lane_ws/build/custom_messages/rosidl_generator_cpp/custom_messages/msg/detail/parent_message__struct.hpp:24:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcustom_message/msg/detail/lanemarkings__struct.hpp: No such file or directory\n'}
+[1.684852] (custom_messages) StderrLine: {'line': b'   24 | #include \x1b[01;31m\x1b[K"custom_message/msg/detail/lanemarkings__struct.hpp"\x1b[m\x1b[K\n'}
+[1.684901] (custom_messages) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.684947] (custom_messages) StderrLine: {'line': b'compilation terminated.\n'}
+[1.685722] (custom_messages) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/build.make:112: CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages/msg/detail/parent_message__type_support.cpp.o] Error 1\n'}
+[1.685967] (custom_messages) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/all] Error 2\n'}
+[1.704432] (-) TimerEvent: {}
+[1.804761] (-) TimerEvent: {}
+[1.827736] (custom_messages) StdoutLine: {'line': b'running egg_info\n'}
+[1.828320] (custom_messages) StdoutLine: {'line': b'writing custom_messages.egg-info/PKG-INFO\n'}
+[1.828589] (custom_messages) StdoutLine: {'line': b'writing dependency_links to custom_messages.egg-info/dependency_links.txt\n'}
+[1.828686] (custom_messages) StdoutLine: {'line': b'writing top-level names to custom_messages.egg-info/top_level.txt\n'}
+[1.830321] (custom_messages) StdoutLine: {'line': b"reading manifest file 'custom_messages.egg-info/SOURCES.txt'\n"}
+[1.830934] (custom_messages) StdoutLine: {'line': b"writing manifest file 'custom_messages.egg-info/SOURCES.txt'\n"}
+[1.851694] (custom_messages) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_custom_messages_egg\n'}
+[1.852532] (custom_messages) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.854244] (custom_messages) CommandEnded: {'returncode': 2}
+[1.904865] (-) TimerEvent: {}
+[1.955600] (custom_messages) JobEnded: {'identifier': 'custom_messages', 'rc': 2}
+[1.966513] (lane_publisher) JobSkipped: {'identifier': 'lane_publisher'}
+[1.966572] (-) EventReactorShutdown: {}

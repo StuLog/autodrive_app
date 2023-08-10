@@ -1,0 +1,4 @@
+# File: ParentMessage.msg
+custom_messages/Laneid laneid_field
+custom_messages/Lanetype lanetype_field
+custom_messages/Lanemarkings lanemarkings_field
