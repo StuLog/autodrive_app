@@ -5,7 +5,7 @@ I = imread('TrafficLight.jpg');
 % call createMask function to get the mask and the filtered image
 [BW,maskedRGBImage] = createMask(I);
 
-% plot the original image, mask and filtered image all in one figure
+% plot the original image and filtered image
 subplot(1,3,1);imshow(I);title('Original Image');
 subplot(1,3,3);imshow(maskedRGBImage);title('Filtered Image');
 
