@@ -20,7 +20,7 @@ function [BW,maskedRGBImage] = createMask(RGB)
     channel2Min = 0.000;
     channel2Max = 1.000;
     
-    %this is the brightness
+    %this is the brightness (this value is set for the traffic light one)
     channel3Min = 0.800;
     channel3Max = 1.000;
     
