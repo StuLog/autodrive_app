@@ -12,7 +12,7 @@ subplot(1,3,3);imshow(maskedRGBImage);title('Filtered Image');
 function [BW,maskedRGBImage] = createMask(RGB) 
     I = rgb2hsv(RGB);
 
-    %this is where we have the color selection
+    %this is where we have the color selection (this range is for red)
     channel1Min = 0.970;
     channel1Max = 0.138;
     
